@@ -51,7 +51,13 @@ class EnvironmentVariables {
   STELLAR_RPC_URL: string;
 
   @IsString()
+  STELLAR_HORIZON_URL: string;
+
+  @IsString()
   STELLAR_NETWORK_PASSPHRASE: string;
+
+  @IsString()
+  STELLAR_SPONSOR_SECRET_KEY: string;
 
   @IsString()
   PROJECT_LAUNCH_CONTRACT_ID: string;

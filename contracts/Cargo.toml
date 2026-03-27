@@ -12,6 +12,7 @@ members = [
     "cross-chain-bridge",
     "insurance-pool",
     "amm-liquidity-pools",
+    "limit-orders",
     "shared",
     "identity",
     "oracle-network",

@@ -1,7 +1,7 @@
 #![cfg(test)]
 
 use crate::{OrderBook, OrderType, OrderStatus};
-use soroban_sdk::{testutils::Address as _, Address, Env, Vec};
+use soroban_sdk::{Env, Vec};
 
 #[test]
 fn test_order_book_structure() {

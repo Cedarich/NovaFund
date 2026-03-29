@@ -17,6 +17,7 @@ import { VerificationModule } from './verification/verification.module';
 import { RedisModule } from './redis/redis.module';
 import { ProjectModule } from './project/project.module';
 import { StellarModule } from './stellar/stellar.module';
+import { OracleModule } from './oracle/oracle.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { StellarModule } from './stellar/stellar.module';
     RelayModule,
     VerificationModule,
     ProjectModule,
+    OracleModule,
   ],
   controllers: [AppController, UserController],
   providers: [AppService],

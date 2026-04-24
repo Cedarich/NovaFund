@@ -120,9 +120,7 @@ export class PathfinderService {
       );
 
       // Query Stellar's path finding API
-      const pathResponse = await this.horizonServer.strictReceivePaths(sourceAsset, destinationAsset, [
-        { asset: destinationAsset, amount: sourceAmount },
-      ])
+      const pathResponse = await this.horizonServer.strictReceivePaths([sourceAsset], destinationAsset, sourceAmount)
         .limit(1)
         .call();
 
@@ -186,9 +184,7 @@ export class PathfinderService {
       );
 
       // Query multiple paths
-      const pathResponse = await this.horizonServer.strictReceivePaths(sourceAsset, destinationAsset, [
-        { asset: destinationAsset, amount: sourceAmount },
-      ])
+      const pathResponse = await this.horizonServer.strictReceivePaths([sourceAsset], destinationAsset, sourceAmount)
         .limit(pathCount)
         .call();
 
